@@ -172,7 +172,7 @@ function Gas (runner, options) {
   })
 
   runner.on('end', () => {
-    stats.generateGasStatsReport(methodMap, deployMap)
+    stats.generateGasStatsReport(methodMap, deployMap, addressContractNameMap)
     self.epilogue()
   });
 }
